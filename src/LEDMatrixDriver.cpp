@@ -13,7 +13,7 @@ LEDMatrixDriver::LEDMatrixDriver(uint8_t N, uint8_t ssPin, uint8_t flags, uint8_
 	Adafruit_GFX(N*8, N),
 #endif
 	N(N),
-	spiSettings(5000000, MSBFIRST, SPI_MODE0),
+	spiSettings(4000000, MSBFIRST, SPI_MODE0),
 	flags(flags),
 	frameBuffer(fb),
 	selfAllocated(fb == nullptr),
